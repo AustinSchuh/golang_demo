@@ -1,0 +1,4 @@
+# Use our CROSSTOOL.
+build --crosstool_top=//tools/cpp:toolchain
+# Don't switch HOST compilers.
+build --host_crosstool_top=//tools/cpp:toolchain

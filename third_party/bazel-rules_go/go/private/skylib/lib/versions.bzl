@@ -53,7 +53,7 @@ def _parse_bazel_version(bazel_version):
   """
 
   version = _extract_version_number(bazel_version)
-  return tuple([int(n) for n in version.split(".")])
+  return (0, 9, 0) #tuple([int(n) for n in version.split(".")])
 
 
 def _is_at_most(threshold, version):

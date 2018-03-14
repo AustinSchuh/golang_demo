@@ -1,0 +1,6 @@
+#!/bin/bash --norc
+
+PATH="${BAZEL_OUTPUT_ROOT}external/clang_3p6_repo/usr/libexec/gcc/arm-linux-gnueabihf/4.9.3:$PATH" \
+	exec \
+	${BAZEL_OUTPUT_ROOT}external/clang_3p6_repo/usr/bin/gcc \
+	"$@"
